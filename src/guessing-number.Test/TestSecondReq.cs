@@ -25,7 +25,11 @@ public class TestSecondReq
   [InlineData(50, 0)]
   public void TestProgramComparisonValuesLess(int mockValue, int entry)
   {
-    throw new NotImplementedException();
+    var guessNumber = new GuessNumber();
+
+    guessNumber.randomValue = mockValue;
+
+    entry.Should().BeLessThan(guessNumber.randomValue);
   }
   [Theory(DisplayName = "Deve comparar a entrada do usuário em um caso MAIOR")]
   [InlineData(50, 60)]
