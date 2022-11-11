@@ -46,6 +46,10 @@ public class TestSecondReq
   [InlineData(50, 50)]
   public void TestProgramComparisonValuesEqual(int mockValue, int entry)
   {
-    throw new NotImplementedException();
+    var guessNumber = new GuessNumber();
+
+    guessNumber.randomValue = mockValue;
+
+    entry.Should().Be(guessNumber.randomValue);
   }
 }
