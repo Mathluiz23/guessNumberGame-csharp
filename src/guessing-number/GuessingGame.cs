@@ -39,7 +39,7 @@ public class GuessNumber
 
   public void RandomNumber()
   {
-    throw new NotImplementedException();
+    randomValue = random.GetInt(-100, 100);
   }
 
   public void AnalyzePlay()
