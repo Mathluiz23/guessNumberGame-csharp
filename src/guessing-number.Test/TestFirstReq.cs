@@ -10,7 +10,7 @@ namespace guessing_number.Test;
 public class TestFirstReq
 {
   [Theory(DisplayName = "Deve exibir mensagem inicial!")]
-  [InlineData(new object[] { new string[] { "---Bem-vindo ao ...---", "Para começar..." } })]
+  [InlineData(new object[] { new string[] { "---Bem-vindo ao Guessing Game---", "Para começar, tente adivinhar o número que eu pensei, entre -100 e 100!" } })]
   public void TestPrintInitialMessage(string[] expected)
   {
     using (var stringWriter = new StringWriter())
